@@ -1,4 +1,6 @@
 ---
+templateKey: 'privacy-page'
+path: /privacy
 title: Privacy Policy
 ---
 <h2>1. Terms</h2>
