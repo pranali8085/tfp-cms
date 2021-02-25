@@ -1,0 +1,23 @@
+@import "../../assets/css/config";
+
+.featured-on-section {
+    margin: 0px 70px;
+    .featured-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .single-featured-img-wrap {
+            width: 32%;
+            text-align: center;
+            margin: 60px auto;
+
+            .featured-link {
+                .featured-logo {
+                    width: 80%;
+                    height: auto;
+                }
+            }
+        }
+    }
+}

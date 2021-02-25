@@ -17,6 +17,16 @@ body {
   color: $black-text;
   background: $white;
 
+  .section-title {
+    color: $black-title;
+    font-family: $raleway-regular;
+    font-size: 46px;
+    line-height: 50px;
+    text-align: center;
+    font-weight: 100;
+    text-transform: uppercase;
+  }
+
   .icon {
     &.social-icon {
       height: 26px;
@@ -50,9 +60,15 @@ body {
   a {
     text-decoration: none;
     color: $white;
+    cursor: pointer;
   }
 
   .section-padding {
     padding: 0 65px;
+  }
+
+  .tfp-separator {
+    border: 1px solid $gray;
+    flex-basis: 100%;
   }
 }
