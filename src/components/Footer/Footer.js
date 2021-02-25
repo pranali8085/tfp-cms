@@ -4,10 +4,10 @@ import { Link } from 'gatsby'
 import './Footer.scss'
 
 
-import facebook from '../../img/social/facebook.svg'
-import instagram from '../../img/social/instagram.svg'
-import twitter from '../../img/social/twitter.svg'
-import linkedin from '../../img/social/linkedin.svg'
+// import facebook from '../../img/social/facebook.svg'
+// import instagram from '../../img/social/instagram.svg'
+// import twitter from '../../img/social/twitter.svg'
+// import linkedin from '../../img/social/linkedin.svg'
 
 import iTunesApple from '../../img/social/itunes.png'
 import soundCloud from '../../img/social/sound_cloud.png'
@@ -89,7 +89,7 @@ const Footer = class extends React.Component {
           </div>
         </section>
         <a
-          className="navbar-item"
+          className="admin-link"
           href="/admin/"
           target="_blank"
           rel="noopener noreferrer"
