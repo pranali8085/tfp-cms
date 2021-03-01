@@ -2,5 +2,79 @@
 @import "../../assets/css/config";
 
 .tfp-header {
-    
+    width: 100%;
+    max-width: 100%;
+    max-width: 100vw;
+
+    position: absolute;
+    top: 0;
+    display: flex;
+    .header-right {
+        display: flex;
+        flex-direction: column;
+
+        button.nav-menu-button {
+            width: 78px;
+            height: 60px;
+            background: $red;
+            border: $red;
+
+            &:after {
+                content: '';
+                display: block;
+                position: absolute;
+                bottom: -20px;
+                left: 0;
+                border-top: 20px solid $red;
+                border-right: 78px solid transparent;
+            }
+
+            .menu-icon {
+                width: 70%;
+                height: auto;
+            }
+        }
+    }
+    .header-left {
+        margin-left: auto;
+        display: flex;
+        flex-direction: row;
+
+        .social-links {
+            margin-right: 40px;
+            .social-link {
+                .icon.social-icon {
+                    &:hover {
+                        fill: $red !important;
+                    }
+                }
+            }
+        }
+
+        .btn-subscribe {
+            font-family: $raleway-black;
+            font-size: 30px;
+            font-weight: 900;
+            line-height: 85px;
+            text-transform: uppercase;
+
+            background: $red;
+            color: $white;
+            border: none;
+            margin: auto 0;
+            padding: 0 40px;
+
+            position: relative;
+
+            &:before {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 0;
+                left: -32px;
+                border-top: 85px solid $red;
+                border-left: 32px solid transparent;
+            }
+        }
+    }
 }
