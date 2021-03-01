@@ -1,0 +1,38 @@
+@import "../../assets/css/config";
+
+.tfp-form-wrap {
+    margin-top: 50px;
+    .tfp-form {
+        .form-title {
+            font-family: $raleway-regular;
+            font-size: 36px;
+            font-weight: 100;
+            line-height: 50px;
+            color: $white;
+            text-transform: uppercase;
+            margin: 12px 0;
+        }
+        .fields-wrap {
+            display: flex;
+            justify-content: space-between;
+
+            .field {
+                // margin-right: 15px;
+
+                .inputField {
+                    color: $black-text;
+                    padding: 12px 25px;
+                    font-family: $raleway-regular;
+                    font-size: 32px;
+                    line-height: 50px;
+                    font-weight: 100;
+                    text-align: left;
+                    width: 100%;
+                }
+                .btn-submit {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
