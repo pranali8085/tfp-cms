@@ -43,6 +43,7 @@
         .social-links {
             margin-right: 40px;
             .social-link {
+                margin-top: 70px;
                 .icon.social-icon {
                     &:hover {
                         fill: $red !important;
@@ -62,7 +63,9 @@
             color: $white;
             border: none;
             margin: auto 0;
+            margin-top: 50px;
             padding: 0 40px;
+            padding-left: 10px;
 
             position: relative;
 
