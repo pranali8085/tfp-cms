@@ -10,7 +10,7 @@ backend:
 
 media_folder: static/img
 public_folder: /img
-logo_url: '../img/logo.svg'
+logo_url: '../img/TFP-logo.svg'
 slug:
   encoding: "ascii"
   clean_accents: true
