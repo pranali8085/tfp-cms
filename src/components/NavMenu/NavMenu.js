@@ -1,9 +1,10 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import github from '../img/github-icon.svg'
-import logo from '../img/logo.svg'
 
-const Navbar = class extends React.Component {
+import TFPLogo from '../../img/TFP-logo.svg'
+
+
+const NavMenu = class extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -35,14 +36,14 @@ const Navbar = class extends React.Component {
   render() {
     return (
       <nav
-        className="navbar is-transparent"
+        className="tfp-nav-menu is-transparent"
         role="navigation"
         aria-label="main-navigation"
       >
         <div className="container">
           <div className="navbar-brand">
             <Link to="/" className="navbar-item" title="Logo">
-              <img src={logo} alt="Kaldi" style={{ width: '88px' }} />
+              <img src={TFPLogo} alt="Tales from the PROS logo" style={{ width: '88px' }} />
             </Link>
             {/* Hamburger menu */}
             <div
@@ -77,16 +78,7 @@ const Navbar = class extends React.Component {
               </Link>
             </div>
             <div className="navbar-end has-text-centered">
-              <a
-                className="navbar-item"
-                href="https://github.com/netlify-templates/gatsby-starter-netlify-cms"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span className="icon">
-                  <img src={github} alt="Github" />
-                </span>
-              </a>
+              
             </div>
           </div>
         </div>
@@ -95,4 +87,4 @@ const Navbar = class extends React.Component {
   }
 }
 
-export default Navbar
+export default NavMenu
