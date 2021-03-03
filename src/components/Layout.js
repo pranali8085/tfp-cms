@@ -1,14 +1,14 @@
-import React from 'react'
+import React, {useRef} from 'react'
 import { Helmet } from 'react-helmet'
 import Header from './Header/Header'
 import Footer from './Footer/Footer'
-import NavMenu from './NavMenu/NavMenu'
 import '../assets/css/all.scss'
 import useSiteMetadata from './SiteMetadata'
 import { withPrefix } from 'gatsby'
 
 const TemplateWrapper = ({ children }) => {
   const { title, description } = useSiteMetadata()
+
   return (
     <div>
       <Helmet>
@@ -45,7 +45,6 @@ const TemplateWrapper = ({ children }) => {
         />
       </Helmet>
       <Header />
-      <NavMenu />
 
       <div>{children}</div>
       <Footer />
