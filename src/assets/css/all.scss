@@ -95,4 +95,12 @@ body {
     border: 1px solid $gray;
     flex-basis: 100%;
   }
+
+  .is-transparent {
+    background: #00000080;
+  }
+
+  button {
+    cursor: pointer;
+  }
 }

@@ -1,14 +1,14 @@
-import React from 'react'
+import React, {useRef} from 'react'
 import { Helmet } from 'react-helmet'
 import Header from './Header/Header'
 import Footer from './Footer/Footer'
-import NavMenu from './NavMenu/NavMenu'
 import '../assets/css/all.scss'
 import useSiteMetadata from './SiteMetadata'
 import { withPrefix } from 'gatsby'
 
 const TemplateWrapper = ({ children }) => {
   const { title, description } = useSiteMetadata()
+
   return (
     <div>
       <Helmet>
@@ -27,12 +27,7 @@ const TemplateWrapper = ({ children }) => {
           href={`${withPrefix('/')}img/favicon-32x32.png`}
           sizes="32x32"
         />
-        <link
-          rel="icon"
-          type="image/png"
-          href={`${withPrefix('/')}img/favicon-16x16.png`}
-          sizes="16x16"
-        />
+        
 
         <link
           rel="mask-icon"
@@ -50,7 +45,6 @@ const TemplateWrapper = ({ children }) => {
         />
       </Helmet>
       <Header />
-      {/* <NavMenu /> */}
 
       <div>{children}</div>
       <Footer />
