@@ -16,7 +16,7 @@ export default function Form ({FormName, title}) {
     const [states, setState] = useState(null);
 
     const handleChange = (e) => {
-    setState({ [e.target.name]: e.target.value })
+      setState({ [e.target.name]: e.target.value })
     }
 
   const handleSubmit = (e) => {
@@ -27,6 +27,7 @@ export default function Form ({FormName, title}) {
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: encode({
         'form-name': form.getAttribute('name'),
+        'status': states
       }),
     })
       .then(() => navigate(form.getAttribute('action')))

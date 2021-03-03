@@ -15,7 +15,7 @@ import stitcher from '../../img/social/stitcher.png'
 
 export default function SocialMedia({withTitle}) {
 
-    if (withTitle == "FALSE") {
+    if (withTitle === "FALSE") {
 
       return (
         <div className="social-media-wrap">

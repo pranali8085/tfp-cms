@@ -1,10 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Link, graphql } from 'gatsby'
+import { graphql } from 'gatsby'
 
 import Layout from '../components/Layout'
-import Features from '../components/Features'
-import BlogRoll from '../components/BlogRoll'
+// import Features from '../components/Features'
+// import BlogRoll from '../components/BlogRoll'
 
 import PageBanner from '../components/PageBanner/PageBanner'
 import StayInspiredForm from '../components/Forms/Form'
@@ -24,19 +24,20 @@ export const IndexPageTemplate = ({
 }) => (
   <div className="home-page-container page-container">
     <PageBanner
-                title=""
-                description=""
-                background={bannerImg}
-            >
-                <h1 className="tfp-title">
-                  <p>are you a</p>
-                  <p><span className="imp-words">business</span> or <span className="imp-words">Thought</span></p>
-                  <p><span className="vimp-words">leader</span> that has </p>
-                  <p>a <span className="imp-words">story</span> to <span className="imp-words">share</span>?</p> 
-                </h1>
-                <StayInspiredForm FormName="stay-inspired" title="Stay Inspired"/>
-            </PageBanner>
+      title=""
+      description=""
+      background={bannerImg}
+    >
+      <h1 className="tfp-title">
+        <p>are you a</p>
+        <p><span className="imp-words">business</span> or <span className="imp-words">Thought</span></p>
+        <p><span className="vimp-words">leader</span> that has </p>
+        <p>a <span className="imp-words">story</span> to <span className="imp-words">share</span>?</p> 
+      </h1>
+      <StayInspiredForm FormName="stay-inspired" title="Stay Inspired"/>
+    </PageBanner>
     <FeaturedOn/>
+
   </div>
 )
 

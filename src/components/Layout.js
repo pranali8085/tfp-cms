@@ -1,4 +1,4 @@
-import React, {useRef} from 'react'
+import React from 'react'
 import { Helmet } from 'react-helmet'
 import Header from './Header/Header'
 import Footer from './Footer/Footer'
