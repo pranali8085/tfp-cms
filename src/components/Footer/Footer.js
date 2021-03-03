@@ -4,15 +4,11 @@ import { Link } from 'gatsby'
 import './Footer.scss'
 
 import SocialConnect from '../SocialConnect/SocialConnect'
+import SocialMedia from '../SocialMedia/SocialMedia'
 
-// import facebook from '../../img/social/facebook.svg'
-// import instagram from '../../img/social/instagram.svg'
-// import twitter from '../../img/social/twitter.svg'
-// import linkedin from '../../img/social/linkedin.svg'
-
-import iTunesApple from '../../img/social/itunes.png'
-import soundCloud from '../../img/social/sound_cloud.png'
-import youTube from '../../img/social/Youtube.png'
+// import iTunesApple from '../../img/social/itunes.png'
+// import soundCloud from '../../img/social/sound_cloud.png'
+// import youTube from '../../img/social/Youtube.png'
 
 
 const Footer = class extends React.Component {
@@ -29,43 +25,8 @@ const Footer = class extends React.Component {
               <a href='mailto:marketing@imaginovation.net' className="email-link tfp-red"> marketing@imaginovation.net</a>
             </p>
           </div>
-          <div className="social-media-wrap">
-              <a title="apple pod casts" href="#" className="social-link">
-                <img
-                  className="icon social-media-icon"
-                  src={iTunesApple}
-                  alt = "apple pod casts"
-                />
-              </a>
-              <a title="soundCloud" href="#" className="social-link">
-                <img
-                  className="icon social-media-icon"
-                  src={soundCloud}
-                  alt = "soundCloud"
-                />
-              </a>
-              <a title="youtube" href="#" className="social-link">
-                <img
-                  className="icon social-media-icon"
-                  src={youTube}
-                  alt = "youtube"
-                />
-              </a>
-              <a title="youtube" href="#" className="social-link">
-                <img
-                  className="icon social-media-icon"
-                  src={youTube}
-                  alt = "youtube"
-                />
-              </a>
-              <a title="youtube" href="#" className="social-link">
-                <img
-                  className="icon social-media-icon"
-                  src={youTube}
-                  alt = "youtube"
-                />
-              </a>
-            </div>
+          <SocialMedia withTitle="FALSE" />
+          
         </section>    
 
         <section className="footer-base-strip columns section-padding">
