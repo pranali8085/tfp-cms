@@ -18,6 +18,7 @@
             height: 60px;
             background: $red;
             border: $red;
+            position: relative;
 
             &:after {
                 content: '';

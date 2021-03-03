@@ -1,0 +1,27 @@
+@import "../../assets/css/config";
+
+.social-media-wrap {
+    display: flex;
+
+    margin-left: auto;
+    margin-right: 20%;
+    margin-top: -5%;
+
+    .social-link {
+        margin: 0px 5%;
+    }
+
+    &.with-title {
+        margin: 0;
+        margin-top: 100px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .social-link {
+            display: flex;
+            .media-title {
+                margin: auto 10px;
+            }
+        }
+    }
+}
