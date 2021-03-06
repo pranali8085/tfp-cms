@@ -9,6 +9,7 @@ import Layout from '../components/Layout'
 import PageBanner from '../components/PageBanner/PageBanner'
 import StayInspiredForm from '../components/Forms/Form'
 import FeaturedOn from '../components/FeaturedOn/FeaturedOn'
+import FeaturedEpisodes from '../components/FeaturedEpisodes/FeaturedEpisodes'
 
 import bannerImg from '../img/BannerImg.png'
 
@@ -36,8 +37,10 @@ export const IndexPageTemplate = ({
       </h1>
       <StayInspiredForm FormName="stay-inspired" title="Stay Inspired"/>
     </PageBanner>
-    <FeaturedOn/>
 
+    <FeaturedEpisodes />
+    
+    <FeaturedOn/>
   </div>
 )
 

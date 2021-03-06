@@ -1,0 +1,185 @@
+
+@import "../../assets/css/config";
+
+.tfp-featured-episodes-section {
+
+    .episodes-wrap {
+        .single-episode {
+            
+            // transform: skewY(-6deg);
+            overflow: hidden;
+            background-size: cover;
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+
+            // height: 896px;
+            height: 1040px;
+
+            margin-top: -190px;
+
+            &.episode-1 {
+                margin-top: 80px;
+            }
+
+            .pros-content-small {
+
+                padding: 32px;
+                margin: 22% 26%;
+                margin-left: auto;
+                width: 12%;
+            
+                transform: scale(4);
+            
+                // transform: skewY(6deg);
+            
+                .pros-info-wrap {
+                    border: 1px dashed white;
+                    border-right: none;
+                    border-top: none;
+                    position: relative;
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        left: 0px;
+                        height: 10%;
+                        width: 10px;
+                        background: #ae1a2c;
+                        border-bottom: 0.2px dashed white;
+                        transform: scale(1.2);
+                    }
+            
+                    .pros-info {
+                        color: $white;
+                        font-family: $raleway-regular;
+                        font-weight: 100;
+                        padding: 12px;
+            
+                        .pros-name {
+                            font-family: $raleway-black;
+                            font-weight: 900;
+                            font-size: 19px;
+                            line-height: 12px;
+                            text-transform: uppercase;
+            
+                            margin-top: 0;
+                        }
+                        .pros-position {
+                            font-size: 9px;
+                            line-height: 11px;
+                            text-transform: uppercase;
+                        }
+                        .pros-desc {
+                            font-size: 8px;
+                            line-height: 9px;
+                        }
+                    }
+            
+                    .read-more {
+                        border: 1px solid white;
+                        padding: 0;
+                        margin-left: auto;
+                        height: 20px;
+                        display: flex;
+                        width: 50px;
+                    
+                        .play-icon-wrap {
+                            // height: 8px;
+                            // width: 8px;
+                            // padding: 0;
+                            padding: 3px 2px 3px 3px;
+                            margin: auto;
+                            img {
+                                height: 6px;
+                                width: 8px;
+                                vertical-align: middle;
+                                // margin: auto;
+                            }
+                        }
+            
+                        span {
+                            font-size: 7px;
+                            line-height: 8px;
+                        }
+                    }
+                }
+            }
+            
+        }
+    } 
+
+    .play-icon-wrap {
+        border-radius: 50%;
+        padding: 10px 10px 10px 12px;
+        border: 1px solid $white;
+        background: $white;
+
+        .play-icon {
+            vertical-align: middle;
+            margin: auto;
+        }
+    }
+}
+
+
+.filtered {
+    background: yellow;
+ }
+ .filtered img {
+   -webkit-filter: grayscale(100%);
+   filter: grayscale(100%);
+   opacity: 0.5;
+ }
+
+.longDashedBorder{
+     position:relative;
+      margin:68px 0 0 130px; 
+      height:44px;width:86px; 
+      display:inline-block; 
+      border:dashed 1px #f20afb; 
+      transform:scale(4); 
+      overflow:hidden;
+}
+
+
+
+.pros-content {
+
+    padding: 1%;
+    margin: 12% 15%;
+    margin-left: auto;
+    width: 40%;
+
+    // transform: skewY(6deg);
+
+    .pros-info-wrap {
+        border: 1px dashed white;
+
+        .pros-info {
+            color: $white;
+            font-family: $raleway-regular;
+            font-weight: 100;
+            padding: 50px;
+
+            .pros-name {
+                font-family: $raleway-black;
+                font-weight: 900;
+                font-size: 76px;
+                line-height: 50px;
+                text-transform: uppercase;
+
+                margin-top: 0;
+            }
+            .pros-position {
+                font-size: 36px;
+                line-height: 44px;
+                text-transform: uppercase;
+            }
+            .pros-desc {
+                font-size: 28px;
+                line-height: 35px;
+            }
+        }
+    }
+
+}
